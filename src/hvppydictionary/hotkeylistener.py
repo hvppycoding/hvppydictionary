@@ -3,6 +3,7 @@ from functools import partial
 from PySide6.QtCore import QObject, QThread, Signal, Slot
 import keyboard
 
+
 class HotkeyListenerWorker(QObject):
     pressed = Signal(str)
     
