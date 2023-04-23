@@ -1,6 +1,8 @@
 import sys
 
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import QApplication
+
+from hvppydictionary.mainwindow import MainWindow
 
 
 def main():
@@ -9,10 +11,14 @@ def main():
     app = QApplication(sys.argv)
 
     # Create the main window.
-    window = QMainWindow()
+    window = MainWindow()
 
     # Show the window.
     window.show()
 
     # Run the application.
     sys.exit(app.exec_())
+    
+
+if __name__ == '__main__':
+    main()
